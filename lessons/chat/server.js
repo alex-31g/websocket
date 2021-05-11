@@ -19,13 +19,13 @@ wss.on('connection', ws => {
 		message = message;
 
 		// Если клиент отправил строку 'exit'
-    if (message === 'exit') {
+		if (message === 'exit') {
 			// close() - закрыть соединение с клиентом; остальные клиенты по прежнему остаются подключены
-      ws.close();
-    } else {
+			ws.close();
+		} else {
 			broadcastMessage(message);
-    }
-  });
+		}
+	});
 
 });
 
