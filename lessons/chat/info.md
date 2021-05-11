@@ -19,7 +19,7 @@
 
 Отличие npm i --save-dev от --save:
 - `-S`, `--save`: пакет будет отображается в package.json в разделе dependencies (начиная с версии npm 6.5 можно не указывать `-S` или `--save`)
-- `-D`, `--save-dev`: пакет будет отображается в package.json в разделе dependencies
+- `-D`, `--save-dev`: пакет будет отображается в package.json в разделе devDependencies
 
 В `package.json` добавим комманду для запуска сервера в режиме разработки и запуска клиента с помощью http-server:
 ```json
